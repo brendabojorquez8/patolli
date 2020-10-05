@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Component id="jScrollPane1" alignment="1" pref="425" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="btnRegresar" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="508" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="btnRegresar" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="btnRegresar">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Arial Black" size="18" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Regresar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegresarActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="txtInstrucciones">
+          <Properties>
+            <Property name="editable" type="boolean" value="false"/>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="TABLERO:&#xa;El tablero es en forma de aspa (X) con cuatro &#xa;divisiones y casillas variables dependiendo del&#xa;creador de la sala con un m&#xe1;ximo de 14 casillas &#xa;por aspa, hasta un m&#xed;nimo de 8 casillas.&#xa;&#xa;JUGADORES:&#xa;Se permiten de 2 a 4 jugadores m&#xe1;ximo, cada uno&#xa;inicia de un extremo de la cruz o equis del &#xa;tablero.&#xa;&#xa;FICHAS:&#xa;Se inicia como m&#xed;nimo de 2 y como m&#xe1;ximo de 6 &#xa;fichas para cada jugador, dependiendo de lo &#xa;extensa que se quiera la partida. Estas son de &#xa;diferentes colores (un color para cada jugador), &#xa;que ir&#xe1;n avanzando por las casillas del tablero &#xa;en direcci&#xf3;n de las agujas del reloj, pasando por &#xa;todas las casillas hasta llegar a la salida, que &#xa;ser&#xe1; la misma aspa por la que se inici&#xf3;.&#xa;&#xa;CA&#xd1;AS:&#xa;En vez de dados se usan 5 ca&#xf1;as, que de un lado &#xa;tienen dibujado un punto y del otro estar&#xe1;n &#xa;totalmente lisas. Cada jugador deber&#xe1; lanzar las&#xa;5 ca&#xf1;as en su turno correspondiente y dependiendo&#xa;como caigan podr&#xe1; avanzar el n&#xfa;mero de casillas,&#xa;como se indica a continuaci&#xf3;n:&#xa;&#x9;-1 ca&#xf1;a con punto y las dem&#xe1;s lisas, se &#xa;&#x9; avanza 1 casilla.&#xa;&#x9;-2 ca&#xf1;as con punto y las dem&#xe1;s lisas, se &#xa;&#x9; avanzan 2 casillas.&#xa;&#x9;-3 ca&#xf1;as con punto y las dem&#xe1;s lisas, se &#xa;&#x9; avanzan 3 casillas.&#xa;&#x9;-4 ca&#xf1;as con punto y la restante lisa, se &#xa;&#x9; avanzan 4 casillas.&#xa;&#x9;-5 ca&#xf1;as con punto, se avanzan 10 &#xa;&#x9; casillas.&#xa;&#x9;-5 ca&#xf1;as mostrando la cara lisa, no se &#xa;&#x9; avanza y se cede el turno al siguiente &#xa;&#x9; jugador.&#xa;&#xa;APUESTAS:&#xa;Vamos a tener un fondo fijo de apuesta para cada &#xa;jugador (configurable por el creador de la sala) &#xa;y un monto variable para apostar por turno &#xa;(configurable por el creador de la sala). Si a un&#xa;jugador se le acaba el fondo de apuestas, sale &#xa;del juego autom&#xe1;ticamente.&#xa;&#xa;MOVIMIENTOS:&#xa;- Para ingresar de inicio una ficha en el tablero &#xa;  se tiene que sacar al menos un punto en la &#xa;  tirada de los 5 dados. Si la tirada no es &#xa;  exitosa debe pagar una apuesta a los &#xa;  contrincantes.&#xa;- Una vez con una ficha adentro, cada vez que un &#xa;  jugador logra obtener un punto en su tirada &#xa;  tiene la posibilidad de incorporar una ficha en&#xa;  el tablero, esto hasta que logre introducir &#xa;  todas sus fichas.&#xa;- Si falta una ficha a ingresar y el jugador saca&#xa;  un punto, no puede introducir una nueva ficha &#xa;  en el tablero, si tiene una a una casilla de &#xa;  llegar a la meta, primero se avanza esta &#xfa;ltima,&#xa;  y la otra ficha tendr&#xe1; que espera hasta que &#xa;  salga un uno nuevamente.&#xa;- Para ingresar una ficha, esta se coloca en la &#xa;  casilla central del tablero que le corresponde&#xa;  (el contrario a la salida).&#xa;- Con cada lanzada se mueve una sola ficha, en &#xa;  el orden en que las mismas fueron entrando al &#xa;  tablero. Por ejemplo: vamos a suponer que un &#xa;  jugador tiene ya una ficha ingresada al tablero,&#xa;  y en su siguiente lanzada obtiene 1, por lo &#xa;  tanto, ingresa una nueva ficha; en el siguiente &#xa;  turno, la lanzada ser&#xed;a para avanzar la ficha &#xa;  que ingres&#xf3; primero, luego en su siguiente &#xa;  lanzada, se mover&#xe1; la segunda ficha, y as&#xed; &#xa;  sucesivamente.&#xa;- Se pudiera escoger qu&#xe9; ficha avanzar pagando &#xa;  una apuesta.&#xa;- No puede haber dos fichas de diferente color en&#xa;  la misma casilla. Si al hacer la tirada, la &#xa;  ficha cae en una casilla ocupada, se tienen las&#xa;  siguientes opciones.&#xa;&#x9;- Si la casilla es una de las 4 centrales,&#xa;&#x9;  la ficha que est&#xe1; actualmente en la &#xa;&#x9;  casilla es eliminada.&#xa;&#x9;- Si la casilla no es de las centrales, &#xa;&#x9;  la ficha que cay&#xf3; en la casilla ocupada &#xa;&#x9;  se devuelve a la casilla de donde &#xa;&#x9;  parti&#xf3;.&#xa;- Si un jugador saca una combinaci&#xf3;n en la que no &#xa;  le permita avanzar ninguna pieza (todas las &#xa;  ca&#xf1;as lisas) deber&#xe1; pagar una apuesta.&#xa;- Si el jugador cae en una casilla con tri&#xe1;ngulo &#xa;  se paga doble apuesta.&#xa;- Si un jugador se queda sin fichas &#xa;  autom&#xe1;ticamente pierde la partida.&#xa;- Cuando una ficha llega a la meta se cobra una &#xa;  apuesta a todos los contrincantes y se realiza &#xa;  una nueva jugada.&#xa;- Cuando se cae en la zona semicircular que hay al&#xa;  final de cada brazo del tablero (hay ocho &#xa;  casillas), juega dos turnos seguidos.&#xa;- Gana el jugador que logre meter primero todas &#xa;  sus fichas en la meta o en su defecto, aquel que&#xa;  logre meter el mayor n&#xfa;mero de fichas."/>
+            <Property name="disabledTextColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="enabled" type="boolean" value="false"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
