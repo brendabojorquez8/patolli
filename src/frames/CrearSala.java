@@ -6,7 +6,7 @@
 package frames;
 
 import javax.swing.JOptionPane;
-import patolli.ClavePartida;
+import objetosNegocio.ClavePartida;
 import static javax.swing.JOptionPane.WARNING_MESSAGE;
 
 

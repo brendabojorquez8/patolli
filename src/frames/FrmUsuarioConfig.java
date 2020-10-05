@@ -9,12 +9,12 @@ import frames.FrmJuego;
 import frames.FrmEntrada;
 import frames.CrearSala;
 import javax.swing.JOptionPane;
-import patolli.Jugador;
+import objetosNegocio.Jugador;
 import static javax.swing.JOptionPane.WARNING_MESSAGE;
-import static patolli.Sector.CERO;
-import static patolli.Sector.DOS;
-import static patolli.Sector.TRES;
-import static patolli.Sector.UNO;
+import static objetosNegocio.Sectores.CERO;
+import static objetosNegocio.Sectores.DOS;
+import static objetosNegocio.Sectores.TRES;
+import static objetosNegocio.Sectores.UNO;
 
 /**
  *
