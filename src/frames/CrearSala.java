@@ -230,7 +230,7 @@ public class CrearSala extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCompartirActionPerformed
 
     private void jrbtn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrbtn8ActionPerformed
-        // TODO add your handling code here:
+        System.out.println("hola");
     }//GEN-LAST:event_jrbtn8ActionPerformed
 
     /**
